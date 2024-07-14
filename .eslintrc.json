@@ -1,3 +1,47 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "rules": {
+    "import/no-named-as-default": 0,
+    "import/extensions": [
+      "error",
+      {
+        "js": "ignorePackages"
+      }
+    ],
+    "camelcase": "off",
+    "no-console": "off",
+    "brace-style": [
+      "error",
+      "stroustrup"
+    ],
+    "linebreak-style": [
+      "error",
+      "windows"
+    ],
+//    "comma-dangle": [
+//      "warn",
+//      "always"
+//    ],
+    "quotes": [
+      "warn",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "no-unused-vars": [
+      "warn"
+    ],
+    "no-var": [
+      "off"
+    ],
+    "one-var": [
+      "off"
+    ]
+  }
 }
